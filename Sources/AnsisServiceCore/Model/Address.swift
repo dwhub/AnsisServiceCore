@@ -35,6 +35,9 @@ public final class Address: Model {
     @Timestamp(key: "deletedAt", on: .delete)
     public var deletedAt: Date?
 
+    @Parent(key: "userId")
+    var user: User
+    
     public init() { }
     
     public init(street: String, city: String, zip: String, userId: Int) {

@@ -41,6 +41,9 @@ public final class User : Model {
     @Timestamp(key: "deletedAt", on: .delete)
     public var deletedAt: Date?
     
+    @Children(for: \.$user)
+    var addresses: [Address]
+    
     public init() { }
     
     public init(_ email: String?, _ firstName: String? = nil, _ lastName: String? = nil, _ password: String,

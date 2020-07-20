@@ -42,7 +42,7 @@ public final class User : Model {
     public var deletedAt: Date?
     
     @Children(for: \.$user)
-    var addresses: [Address]
+    public var addresses: [Address]
     
     public init() { }
     

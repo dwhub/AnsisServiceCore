@@ -36,7 +36,7 @@ public final class Address: Model {
     public var deletedAt: Date?
 
     @Parent(key: "userId")
-    var user: User
+    public var user: User
     
     public init() { }
     

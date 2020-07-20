@@ -9,7 +9,7 @@ import Vapor
 import Fluent
 
 public final class Address: Model {
-    public static let schema = "adresses"
+    public static let schema = "addresses"
     
     @ID(custom: "id")
     public var id: Int?

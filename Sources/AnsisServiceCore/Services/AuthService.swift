@@ -9,7 +9,7 @@ import Vapor
 import Foundation
 import Fluent
 
-struct AuthService {
+public struct AuthService {
         
     func refreshToken(request: Request, refreshToken: String) throws -> EventLoopFuture<(payloadString: String, payload: Payload)> {
         do {

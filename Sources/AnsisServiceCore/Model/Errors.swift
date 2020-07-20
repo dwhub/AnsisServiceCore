@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum UserServiceError: Error {
+public enum UserServiceError: Error {
     case UserUnauthorized
     case AuthenticationError
     case PasswordMismatch

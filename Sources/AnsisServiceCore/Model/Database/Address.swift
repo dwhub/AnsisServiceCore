@@ -9,35 +9,35 @@ import Vapor
 import Fluent
 
 public final class Address: Model {
-    static let schema = "adresses"
+    public static let schema = "adresses"
     
     @ID(custom: "id")
-    var id: Int?
+    public var id: Int?
     
     @Field(key: "street")
-    var street: String
+    public var street: String
     
     @Field(key: "city")
-    var city: String
+    public var city: String
     
     @Field(key: "zip")
-    var zip: String
+    public var zip: String
     
     @Field(key: "userId")
-    var userId: Int
+    public var userId: Int
     
     @Timestamp(key: "createdAt", on: .create)
-    var createdAt: Date?
+    public var createdAt: Date?
     
     @Timestamp(key: "updatedAt", on: .update)
-    var updatedAt: Date?
+    public var updatedAt: Date?
     
     @Timestamp(key: "deletedAt", on: .delete)
-    var deletedAt: Date?
+    public var deletedAt: Date?
 
-    init() { }
+    public init() { }
     
-    init(street: String, city: String, zip: String, userId: Int) {
+    public init(street: String, city: String, zip: String, userId: Int) {
             self.street = street
             self.city = city
             self.zip = zip

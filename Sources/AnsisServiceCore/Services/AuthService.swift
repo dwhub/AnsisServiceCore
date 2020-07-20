@@ -48,6 +48,10 @@ public struct AuthService {
             return user
         }
     }
+    
+    public init() {
+        
+    }
 }
 
 public struct AuthServiceKey: StorageKey {
